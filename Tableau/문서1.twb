@@ -1,0 +1,1301 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<workbook original-version='18.1' source-build='2023.2.0 (20232.23.0611.2007)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='LCK_2023_SPRING' inline='true' name='federated.1a5wjzc13xesph12wgwpd09r80sf' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='LCK_2023_SPRING' name='textscan.15esoj00jy2fii12d0zko1nkbwc0'>
+            <connection class='textscan' directory='F:/Python/FlyAI_Project/Data/RawData' filename='LCK_2023_SPRING.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15esoj00jy2fii12d0zko1nkbwc0' name='LCK_2023_SPRING.csv' table='[LCK_2023_SPRING#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Player' ordinal='0' />
+            <column datatype='string' name='Champion' ordinal='1' />
+            <column datatype='string' name='Role' ordinal='2' />
+            <column datatype='integer' name='Level' ordinal='3' />
+            <column datatype='integer' name='Kills' ordinal='4' />
+            <column datatype='integer' name='Deaths' ordinal='5' />
+            <column datatype='integer' name='Assists' ordinal='6' />
+            <column datatype='string' name='KDA' ordinal='7' />
+            <column datatype='integer' name='CS' ordinal='8' />
+            <column datatype='integer' name='CS in Team&apos;s Jungle' ordinal='9' />
+            <column datatype='string' name='CS in Enemy Jungle' ordinal='10' />
+            <column datatype='real' name='CSM' ordinal='11' />
+            <column datatype='integer' name='Golds' ordinal='12' />
+            <column datatype='integer' name='GPM' ordinal='13' />
+            <column datatype='real' name='GOLD%' ordinal='14' />
+            <column datatype='integer' name='Vision Score' ordinal='15' />
+            <column datatype='integer' name='Wards placed' ordinal='16' />
+            <column datatype='integer' name='Wards destroyed' ordinal='17' />
+            <column datatype='integer' name='Control Wards Purchased' ordinal='18' />
+            <column datatype='integer' name='Detector Wards Placed' ordinal='19' />
+            <column datatype='real' name='VSPM' ordinal='20' />
+            <column datatype='real' name='WPM' ordinal='21' />
+            <column datatype='real' name='VWPM' ordinal='22' />
+            <column datatype='real' name='WCPM' ordinal='23' />
+            <column datatype='real' name='VS%' ordinal='24' />
+            <column datatype='integer' name='Total damage to Champion' ordinal='25' />
+            <column datatype='integer' name='Physical Damage' ordinal='26' />
+            <column datatype='integer' name='Magic Damage' ordinal='27' />
+            <column datatype='integer' name='True Damage' ordinal='28' />
+            <column datatype='integer' name='DPM' ordinal='29' />
+            <column datatype='real' name='DMG%' ordinal='30' />
+            <column datatype='real' name='K+A Per Minute' ordinal='31' />
+            <column datatype='real' name='KP%' ordinal='32' />
+            <column datatype='integer' name='Solo kills' ordinal='33' />
+            <column datatype='integer' name='Double kills' ordinal='34' />
+            <column datatype='integer' name='Triple kills' ordinal='35' />
+            <column datatype='integer' name='Quadra kills' ordinal='36' />
+            <column datatype='integer' name='Penta kills' ordinal='37' />
+            <column datatype='integer' name='GD@15' ordinal='38' />
+            <column datatype='integer' name='CSD@15' ordinal='39' />
+            <column datatype='integer' name='XPD@15' ordinal='40' />
+            <column datatype='integer' name='LVLD@15' ordinal='41' />
+            <column datatype='integer' name='Objectives Stolen' ordinal='42' />
+            <column datatype='integer' name='Damage dealt to turrets' ordinal='43' />
+            <column datatype='integer' name='Damage dealt to buildings' ordinal='44' />
+            <column datatype='integer' name='Total heal' ordinal='45' />
+            <column datatype='integer' name='Total Heals On Teammates' ordinal='46' />
+            <column datatype='integer' name='Damage self mitigated' ordinal='47' />
+            <column datatype='integer' name='Total Damage Shielded On Teammates' ordinal='48' />
+            <column datatype='integer' name='Time ccing others' ordinal='49' />
+            <column datatype='integer' name='Total Time CC Dealt' ordinal='50' />
+            <column datatype='integer' name='Total damage taken' ordinal='51' />
+            <column datatype='integer' name='Total Time Spent Dead' ordinal='52' />
+            <column datatype='integer' name='Consumables purchased' ordinal='53' />
+            <column datatype='integer' name='Items Purchased' ordinal='54' />
+            <column datatype='integer' name='Shutdown bounty collected' ordinal='55' />
+            <column datatype='integer' name='Shutdown bounty lost' ordinal='56' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.15esoj00jy2fii12d0zko1nkbwc0' name='LCK_2023_SPRING.csv' table='[LCK_2023_SPRING#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Player' ordinal='0' />
+            <column datatype='string' name='Champion' ordinal='1' />
+            <column datatype='string' name='Role' ordinal='2' />
+            <column datatype='integer' name='Level' ordinal='3' />
+            <column datatype='integer' name='Kills' ordinal='4' />
+            <column datatype='integer' name='Deaths' ordinal='5' />
+            <column datatype='integer' name='Assists' ordinal='6' />
+            <column datatype='string' name='KDA' ordinal='7' />
+            <column datatype='integer' name='CS' ordinal='8' />
+            <column datatype='integer' name='CS in Team&apos;s Jungle' ordinal='9' />
+            <column datatype='string' name='CS in Enemy Jungle' ordinal='10' />
+            <column datatype='real' name='CSM' ordinal='11' />
+            <column datatype='integer' name='Golds' ordinal='12' />
+            <column datatype='integer' name='GPM' ordinal='13' />
+            <column datatype='real' name='GOLD%' ordinal='14' />
+            <column datatype='integer' name='Vision Score' ordinal='15' />
+            <column datatype='integer' name='Wards placed' ordinal='16' />
+            <column datatype='integer' name='Wards destroyed' ordinal='17' />
+            <column datatype='integer' name='Control Wards Purchased' ordinal='18' />
+            <column datatype='integer' name='Detector Wards Placed' ordinal='19' />
+            <column datatype='real' name='VSPM' ordinal='20' />
+            <column datatype='real' name='WPM' ordinal='21' />
+            <column datatype='real' name='VWPM' ordinal='22' />
+            <column datatype='real' name='WCPM' ordinal='23' />
+            <column datatype='real' name='VS%' ordinal='24' />
+            <column datatype='integer' name='Total damage to Champion' ordinal='25' />
+            <column datatype='integer' name='Physical Damage' ordinal='26' />
+            <column datatype='integer' name='Magic Damage' ordinal='27' />
+            <column datatype='integer' name='True Damage' ordinal='28' />
+            <column datatype='integer' name='DPM' ordinal='29' />
+            <column datatype='real' name='DMG%' ordinal='30' />
+            <column datatype='real' name='K+A Per Minute' ordinal='31' />
+            <column datatype='real' name='KP%' ordinal='32' />
+            <column datatype='integer' name='Solo kills' ordinal='33' />
+            <column datatype='integer' name='Double kills' ordinal='34' />
+            <column datatype='integer' name='Triple kills' ordinal='35' />
+            <column datatype='integer' name='Quadra kills' ordinal='36' />
+            <column datatype='integer' name='Penta kills' ordinal='37' />
+            <column datatype='integer' name='GD@15' ordinal='38' />
+            <column datatype='integer' name='CSD@15' ordinal='39' />
+            <column datatype='integer' name='XPD@15' ordinal='40' />
+            <column datatype='integer' name='LVLD@15' ordinal='41' />
+            <column datatype='integer' name='Objectives Stolen' ordinal='42' />
+            <column datatype='integer' name='Damage dealt to turrets' ordinal='43' />
+            <column datatype='integer' name='Damage dealt to buildings' ordinal='44' />
+            <column datatype='integer' name='Total heal' ordinal='45' />
+            <column datatype='integer' name='Total Heals On Teammates' ordinal='46' />
+            <column datatype='integer' name='Damage self mitigated' ordinal='47' />
+            <column datatype='integer' name='Total Damage Shielded On Teammates' ordinal='48' />
+            <column datatype='integer' name='Time ccing others' ordinal='49' />
+            <column datatype='integer' name='Total Time CC Dealt' ordinal='50' />
+            <column datatype='integer' name='Total damage taken' ordinal='51' />
+            <column datatype='integer' name='Total Time Spent Dead' ordinal='52' />
+            <column datatype='integer' name='Consumables purchased' ordinal='53' />
+            <column datatype='integer' name='Items Purchased' ordinal='54' />
+            <column datatype='integer' name='Shutdown bounty collected' ordinal='55' />
+            <column datatype='integer' name='Shutdown bounty lost' ordinal='56' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Player</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Player]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Player</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Champion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Champion]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Champion</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Role</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Role]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Role</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Level</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Level]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Level</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Kills]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Kills</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Deaths]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Deaths</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Assists</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Assists]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Assists</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KDA</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[KDA]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>KDA</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CS]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>CS</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS in Team&apos;s Jungle</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CS in Team&apos;s Jungle]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>CS in Team&apos;s Jungle</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CS in Enemy Jungle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CS in Enemy Jungle]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>CS in Enemy Jungle</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CSM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CSM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>CSM</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Golds</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Golds]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Golds</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GPM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GPM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>GPM</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GOLD%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GOLD%]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>GOLD%</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vision Score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Vision Score]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Vision Score</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wards placed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wards placed]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Wards placed</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wards destroyed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wards destroyed]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Wards destroyed</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Control Wards Purchased</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Control Wards Purchased]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Control Wards Purchased</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Detector Wards Placed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Detector Wards Placed]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Detector Wards Placed</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VSPM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VSPM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>VSPM</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WPM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WPM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>WPM</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VWPM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VWPM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>VWPM</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WCPM</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[WCPM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>WCPM</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VS%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[VS%]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>VS%</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total damage to Champion</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total damage to Champion]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total damage to Champion</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Physical Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Physical Damage]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Physical Damage</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Magic Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Magic Damage]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Magic Damage</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>True Damage</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[True Damage]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>True Damage</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DPM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DPM]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>DPM</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DMG%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DMG%]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>DMG%</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>K+A Per Minute</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[K+A Per Minute]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>K+A Per Minute</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>KP%</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[KP%]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>KP%</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Solo kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Solo kills]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Solo kills</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Double kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Double kills]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Double kills</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Triple kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Triple kills]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Triple kills</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quadra kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Quadra kills]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Quadra kills</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Penta kills</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Penta kills]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Penta kills</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GD@15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GD@15]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>GD@15</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CSD@15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CSD@15]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>CSD@15</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>XPD@15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[XPD@15]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>XPD@15</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LVLD@15</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LVLD@15]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>LVLD@15</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Objectives Stolen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Objectives Stolen]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Objectives Stolen</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Damage dealt to turrets</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Damage dealt to turrets]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Damage dealt to turrets</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Damage dealt to buildings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Damage dealt to buildings]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Damage dealt to buildings</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total heal</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total heal]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total heal</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Heals On Teammates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Heals On Teammates]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total Heals On Teammates</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Damage self mitigated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Damage self mitigated]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Damage self mitigated</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Damage Shielded On Teammates</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Damage Shielded On Teammates]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total Damage Shielded On Teammates</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Time ccing others</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Time ccing others]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Time ccing others</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Time CC Dealt</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Time CC Dealt]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total Time CC Dealt</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total damage taken</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total damage taken]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total damage taken</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Time Spent Dead</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Total Time Spent Dead]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Total Time Spent Dead</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Consumables purchased</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Consumables purchased]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Consumables purchased</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Items Purchased</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Items Purchased]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Items Purchased</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shutdown bounty collected</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shutdown bounty collected]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Shutdown bounty collected</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Shutdown bounty lost</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Shutdown bounty lost]</local-name>
+            <parent-name>[LCK_2023_SPRING.csv]</parent-name>
+            <remote-alias>Shutdown bounty lost</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Csd@15' datatype='integer' name='[CSD@15]' role='measure' type='quantitative' />
+      <column caption='Dmg%' datatype='real' name='[DMG%]' role='measure' type='quantitative' />
+      <column caption='Gd@15' datatype='integer' name='[GD@15]' role='measure' type='quantitative' />
+      <column caption='Gold%' datatype='real' name='[GOLD%]' role='measure' type='quantitative' />
+      <column datatype='real' name='[KP%]' role='measure' type='quantitative' />
+      <column caption='Lvld@15' datatype='integer' name='[LVLD@15]' role='measure' type='quantitative' />
+      <column datatype='real' name='[VS%]' role='measure' type='quantitative' />
+      <column caption='Vspm' datatype='real' name='[VSPM]' role='measure' type='quantitative' />
+      <column caption='Vwpm' datatype='real' name='[VWPM]' role='measure' type='quantitative' />
+      <column caption='Wcpm' datatype='real' name='[WCPM]' role='measure' type='quantitative' />
+      <column caption='Xpd@15' datatype='integer' name='[XPD@15]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='LCK_2023_SPRING.csv' datatype='table' name='[__tableau_internal_object_id__].[LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916]' role='measure' type='quantitative' />
+      <column-instance column='[DMG%]' derivation='Sum' name='[sum:DMG%:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GOLD%]' derivation='Sum' name='[sum:GOLD%:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[KP%]' derivation='Sum' name='[sum:KP%:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[VS%]' derivation='Sum' name='[sum:VS%:qk]' pivot='key' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:DMG\%:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:VS\%:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:KP\%:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:GOLD\%:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;미국&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='LCK_2023_SPRING.csv' id='LCK_2023_SPRING.csv_22F651F1C6F24989A4303BDFA76D0916'>
+            <properties context=''>
+              <relation connection='textscan.15esoj00jy2fii12d0zko1nkbwc0' name='LCK_2023_SPRING.csv' table='[LCK_2023_SPRING#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Player' ordinal='0' />
+                  <column datatype='string' name='Champion' ordinal='1' />
+                  <column datatype='string' name='Role' ordinal='2' />
+                  <column datatype='integer' name='Level' ordinal='3' />
+                  <column datatype='integer' name='Kills' ordinal='4' />
+                  <column datatype='integer' name='Deaths' ordinal='5' />
+                  <column datatype='integer' name='Assists' ordinal='6' />
+                  <column datatype='string' name='KDA' ordinal='7' />
+                  <column datatype='integer' name='CS' ordinal='8' />
+                  <column datatype='integer' name='CS in Team&apos;s Jungle' ordinal='9' />
+                  <column datatype='string' name='CS in Enemy Jungle' ordinal='10' />
+                  <column datatype='real' name='CSM' ordinal='11' />
+                  <column datatype='integer' name='Golds' ordinal='12' />
+                  <column datatype='integer' name='GPM' ordinal='13' />
+                  <column datatype='real' name='GOLD%' ordinal='14' />
+                  <column datatype='integer' name='Vision Score' ordinal='15' />
+                  <column datatype='integer' name='Wards placed' ordinal='16' />
+                  <column datatype='integer' name='Wards destroyed' ordinal='17' />
+                  <column datatype='integer' name='Control Wards Purchased' ordinal='18' />
+                  <column datatype='integer' name='Detector Wards Placed' ordinal='19' />
+                  <column datatype='real' name='VSPM' ordinal='20' />
+                  <column datatype='real' name='WPM' ordinal='21' />
+                  <column datatype='real' name='VWPM' ordinal='22' />
+                  <column datatype='real' name='WCPM' ordinal='23' />
+                  <column datatype='real' name='VS%' ordinal='24' />
+                  <column datatype='integer' name='Total damage to Champion' ordinal='25' />
+                  <column datatype='integer' name='Physical Damage' ordinal='26' />
+                  <column datatype='integer' name='Magic Damage' ordinal='27' />
+                  <column datatype='integer' name='True Damage' ordinal='28' />
+                  <column datatype='integer' name='DPM' ordinal='29' />
+                  <column datatype='real' name='DMG%' ordinal='30' />
+                  <column datatype='real' name='K+A Per Minute' ordinal='31' />
+                  <column datatype='real' name='KP%' ordinal='32' />
+                  <column datatype='integer' name='Solo kills' ordinal='33' />
+                  <column datatype='integer' name='Double kills' ordinal='34' />
+                  <column datatype='integer' name='Triple kills' ordinal='35' />
+                  <column datatype='integer' name='Quadra kills' ordinal='36' />
+                  <column datatype='integer' name='Penta kills' ordinal='37' />
+                  <column datatype='integer' name='GD@15' ordinal='38' />
+                  <column datatype='integer' name='CSD@15' ordinal='39' />
+                  <column datatype='integer' name='XPD@15' ordinal='40' />
+                  <column datatype='integer' name='LVLD@15' ordinal='41' />
+                  <column datatype='integer' name='Objectives Stolen' ordinal='42' />
+                  <column datatype='integer' name='Damage dealt to turrets' ordinal='43' />
+                  <column datatype='integer' name='Damage dealt to buildings' ordinal='44' />
+                  <column datatype='integer' name='Total heal' ordinal='45' />
+                  <column datatype='integer' name='Total Heals On Teammates' ordinal='46' />
+                  <column datatype='integer' name='Damage self mitigated' ordinal='47' />
+                  <column datatype='integer' name='Total Damage Shielded On Teammates' ordinal='48' />
+                  <column datatype='integer' name='Time ccing others' ordinal='49' />
+                  <column datatype='integer' name='Total Time CC Dealt' ordinal='50' />
+                  <column datatype='integer' name='Total damage taken' ordinal='51' />
+                  <column datatype='integer' name='Total Time Spent Dead' ordinal='52' />
+                  <column datatype='integer' name='Consumables purchased' ordinal='53' />
+                  <column datatype='integer' name='Items Purchased' ordinal='54' />
+                  <column datatype='integer' name='Shutdown bounty collected' ordinal='55' />
+                  <column datatype='integer' name='Shutdown bounty lost' ordinal='56' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='LCK_2023_SPRING' name='federated.1a5wjzc13xesph12wgwpd09r80sf' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1a5wjzc13xesph12wgwpd09r80sf'>
+            <column datatype='string' name='[Champion]' role='dimension' type='nominal' />
+            <column caption='Dmg%' datatype='real' name='[DMG%]' role='measure' type='quantitative' />
+            <column caption='Gold%' datatype='real' name='[GOLD%]' role='measure' type='quantitative' />
+            <column datatype='real' name='[KP%]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Player]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Role]' role='dimension' type='nominal' />
+            <column datatype='real' name='[VS%]' role='measure' type='quantitative' />
+            <column-instance column='[Champion]' derivation='None' name='[none:Champion:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Player]' derivation='None' name='[none:Player:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Role]' derivation='None' name='[none:Role:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DMG%]' derivation='Sum' name='[sum:DMG%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[GOLD%]' derivation='Sum' name='[sum:GOLD%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[KP%]' derivation='Sum' name='[sum:KP%:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[VS%]' derivation='Sum' name='[sum:VS%:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1a5wjzc13xesph12wgwpd09r80sf].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:DMG\%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:GOLD\%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:KP\%:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:VS\%:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Champion:nk]'>
+            <groupfilter function='member' level='[none:Champion:nk]' member='&quot;Gnar&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Role:nk]'>
+            <groupfilter function='member' level='[none:Role:nk]' member='&quot;TOP&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1a5wjzc13xesph12wgwpd09r80sf].[:Measure Names]</column>
+            <column>[federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Role:nk]</column>
+            <column>[federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Champion:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1a5wjzc13xesph12wgwpd09r80sf].[sum:GOLD%:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1a5wjzc13xesph12wgwpd09r80sf].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1a5wjzc13xesph12wgwpd09r80sf].[Multiple Values]</rows>
+        <cols>([federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Player:nk] / ([federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Role:nk] / ([federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Champion:nk] / [federated.1a5wjzc13xesph12wgwpd09r80sf].[:Measure Names])))</cols>
+      </table>
+      <simple-id uuid='{620EEB41-CD9B-42B7-B1E3-CAE43B3D41C8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1a5wjzc13xesph12wgwpd09r80sf].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1a5wjzc13xesph12wgwpd09r80sf].[:Measure Names]</field>
+            <field>[federated.1a5wjzc13xesph12wgwpd09r80sf].[none:Player:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BB460064-B4FE-4A6B-A6A6-6001EF3EDB41}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+      QmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
