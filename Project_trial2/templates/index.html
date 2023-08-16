@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>프로 선수 데이터 비교</title>
+</head>
+<body>
+    <form action="/" method="post">
+        GOLD%: <input type="text" name="GOLD%"><br>
+        VS%: <input type="text" name="VS%"><br>
+        DMG%: <input type="text" name="DMG%"><br>
+        KP%: <input type="text" name="KP%"><br>
+        XPD@15: <input type="text" name="XPD@15"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+{% if chart_url %}
+<img src="data:image/png;base64,{{ chart_url }}" alt="Radar Chart">
+<p>Closest player: {{ player_name }}</p>
+{% endif %}
