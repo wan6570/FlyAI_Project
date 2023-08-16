@@ -1,13 +1,12 @@
 import pymysql
 
 # MySQL 연결 정보 설정
-host = 'localhost'
-user = 'root'
-password = '1234'
-database = 'flyai'
+hostname='cdymysql.mysql.database.azure.com'
+username={유저네임}
+password={비밀번호}
+database='testdb'
 
 # MySQL 데이터베이스 연결
-connection = pymysql.connect(host=host, user=user, password=password, database=database)
-
+connection = pymysql.connect(user=username, password=password, host=hostname, port=3306, database=database, ssl_ca="DigiCertGlobalRootCA.crt.pem", ssl_disabled=False)
 # 커서 생성
 cursor = connection.cursor()
