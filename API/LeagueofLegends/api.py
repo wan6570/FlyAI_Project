@@ -10,7 +10,8 @@ with open('APIcols.txt', 'r', encoding='utf-8') as file:
 
 def preprocessing(df,r_timeline,col_list=col_list):
     df1=df[df['summonerName']==username]
-    df1['KDA']=(df1['kills']+df1['assists'])/(df1['deaths']+0.5)
+    df1['Player']=username
+    df1['KDA 0.5']=(df1['kills']+df1['assists'])/(df1['deaths']+0.5)
 
     df1['CSM']=df1['totalMinionsKilled']/df1['timePlayed']
 
@@ -43,10 +44,10 @@ def preprocessing(df,r_timeline,col_list=col_list):
 
     # %지표들
 
-    df1['GOLD%']=df1['goldEarned']/df[df['teamId']==int(df1['teamId'])]['goldEarned'].sum(axis=0)*100
-    df1['VS%']=df1['visionScore']/df[df['teamId']==int(df1['teamId'])]['visionScore'].sum(axis=0)*100
-    df1['DMG%']=df1['totalDamageDealtToChampions']/df[df['teamId']==int(df1['teamId'])]['totalDamageDealtToChampions'].sum(axis=0)*100
-    df1['KP%']=(df1['kills']+df1['assists'])/df[df['teamId']==int(df1['teamId'])]['kills'].sum(axis=0)*100
+    df1['GOLD ratio']=df1['goldEarned']/df[df['teamId']==int(df1['teamId'])]['goldEarned'].sum(axis=0)*100
+    df1['VS ratio']=df1['visionScore']/df[df['teamId']==int(df1['teamId'])]['visionScore'].sum(axis=0)*100
+    df1['DMG ratio']=df1['totalDamageDealtToChampions']/df[df['teamId']==int(df1['teamId'])]['totalDamageDealtToChampions'].sum(axis=0)*100
+    df1['KP ratio']=(df1['kills']+df1['assists'])/df[df['teamId']==int(df1['teamId'])]['kills'].sum(axis=0)*100
 
     return df1[col_list]
 
