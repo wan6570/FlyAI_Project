@@ -2,8 +2,8 @@ import pymysql
 
 # MySQL 연결 정보 설정
 hostname='cdymysql.mysql.database.azure.com'
-username={유저네임}
-password={비밀번호}
+username={'jongwan'}
+password={'1234!@#$'}
 database='testdb'
 
 # MySQL 데이터베이스 연결
