@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+/*.navbar{
+    display:flex;
+    width: 1500px;
+    align-items: center;
+    background-color: #401dee;
+    height: 100px;
+    margin: auto;
+}*/
+/*.search-box{
+    display: flex;
+    cursor: pointer;
+    padding:10px 20px;
+    background: rgb(172, 177, 253);
+    align-items: center;   
+    margin-left: 40px;
+    width: 600px;
+    height: 30px;
+    border-radius: 30px;
+    justify-content: center;
+}
+    
+.input-box{
+    width: 560px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    background: transparent;
+    margin-right: 20px;
+    color: red;
+}
+
+.search-box .fa-solid{
+    color: red;
+    font-size: 20px;
+}
+
+::placeholder{
+    color: red;
+}*/
+/*.logo_title{
+    display: flex;
+    width: 350px;
+    background: none;
+    font-size: 60px;
+    padding:8px 40px;  
+}
+.logo_title a{
+    text-decoration: none;   
+    color:white;
+}*/
+.main{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+/*블락1*/
+.block_one_1{
+    width: 870px;
+    height: 200px;
+    margin-right: 16px;
+    background: gray;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#main-section1-left{
+    height: 200px;
+    width: 870px;
+    background-color: green;
+    margin-bottom: 16px;
+    border-radius: 20px;
+}
+
+/*블락2*/
+.block_two_2{
+    width: 870px;
+    background: gray;
+    height: 284px;
+}
+#main-section2-left2{
+    height: 284px;
+    width: 870px;
+    background: green;
+    border-radius: 20px;
+}
+
+
+/*블락3*/
+.block_three_3{
+    width: 500px;
+    background: gray;
+    height: 500px;    
+}
+#main-section3-rigth{
+    width: 500px;
+    height: 500px;
+    background: green;
+    border-radius: 20px;
+
+}
+
+
+/*블락4*/
+.main2{
+    justify-content: center;
+    display: flex;
+    margin-top: 16px;
+}
+.block_four_4{
+    width: 1386px;
+    background:grey;
+    height: 200px;
+
+}
+#main-section4-gamegear{
+    width: 1386px;
+    background: green;
+    height: 200px;
+    border-radius: 20px;
+}
+
+/*블락5*/
+.main3{
+    justify-content: center;
+    display: flex;
+    margin-top: 16px;
+}
+
+.block_five_5{
+    width: 1386px;
+    background: gray;
+    height: 700px;
+}
+#main-section5-11st{
+    width: 1386px;
+    background: green;
+    height: 700px;
+    border-radius: 20px;
+}
