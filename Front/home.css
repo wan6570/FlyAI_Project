@@ -1,0 +1,69 @@
+body {
+  height: 100vh;
+}
+
+.main {
+  height: 87%;
+  width: 100%;
+  background-color: #3617CE;
+  vertical-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title {
+  font-family: 'Secular One', sans-serif;
+  font-size: 180px;
+  text-align: center;
+  color: white;
+}
+  
+.info {
+  height: 45px;
+  width: 55%;
+  font-size: 25px;
+  background-color: #573ED0;
+  border-radius: 30px 30px 30px 30px;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 99;
+} 
+
+.info >span {
+  vertical-align: center;
+  display: inline-block;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.load > img {
+  position: center;
+  z-index: 100;
+  width: 100px;
+}
+
+.search {
+  background-color: #FFC633;
+  height: 10%;
+  display: flex;
+}
+
+.search > input {
+  background-color: #FFC633;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  border: none;
+}
+
+.search > button {
+  background-color: #FFC633;
+  border: none;
+  margin-right: 10px;
+}
+/*
+.search > img {
+  width: 10%;
+  height: 100%;
+}*/
