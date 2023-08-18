@@ -75,10 +75,6 @@ def getAPI(name):
     rankId = r
 
     df_final=pd.DataFrame()
-    with open('APIcols.txt', 'r', encoding='utf-8') as file:
-        for line in file:
-            col_list.append(line.strip()) 
-
     for i in rankId:
         url = 'https://asia.api.riotgames.com/lol/match/v5/matches/' + i + '?api_key=' + apiKey
         r = requests.get(url)
@@ -91,6 +87,4 @@ def getAPI(name):
         r_timeline=r_timeline.json()
         df_final=pd.concat([df_final,preprocessing(df,r_timeline)])
         df_final = df_final.reset_index(drop=True)
-        
-
-    df_final.to_csv('data.csv')
+    return df_final
