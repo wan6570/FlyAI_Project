@@ -33,7 +33,7 @@ def preprocessing(df,r_timeline,col_list=col_list):
 
     #timeline지표들
     usernum=str(df1['participantId'].iloc[0])
-    oppnum=str((int(usernum)+5)%10)
+    oppnum=str((int(usernum)+4)%10+1)
     df1['GD@15']=r_timeline['info']['frames'][15]['participantFrames'][usernum]['totalGold']
 
     df1['CSD@15']=r_timeline['info']['frames'][15]['participantFrames'][usernum]['minionsKilled']
