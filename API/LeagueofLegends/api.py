@@ -2,6 +2,8 @@ import pandas as pd
 import requests
 from urllib import parse
 
+
+
 col_list=[]
 username=''
 with open('APIcols.txt', 'r', encoding='utf-8') as file:
