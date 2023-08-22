@@ -1,0 +1,219 @@
+:root{
+    --primaryColor:#401dee;
+    --whiteColor:white;
+    --blackColor:black;
+    --greyColor:grey;
+    --yellowColor:yellow;
+    --greenColor:green;
+    --border:1rem solid /*rgba(0,0,0,0.1)*/white;
+    --border-hover:0.1rem solid var(--black);
+    --box-shadow:0 0.5rem 1rem /*rgba(0,0,0,0.1)*/grey;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear; 
+    transition: width none;
+    scroll-padding-top: 5rem;/*1rem=18px*/
+    scroll-behavior: smooth ;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;/*1rem=18px*/
+    scroll-behavior: smooth ;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: black;
+}
+
+header .header-1{
+    background: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3%;
+}
+
+header .header-1 .logo-title{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+header .header-1 .logo-title i{
+    color: white;
+    font-size: 40px;
+}
+
+header .header-1 .logo-title .title_1{
+    color: white;
+}
+
+header .header-1 .search-box{
+    width: 50rem;
+    max-width: 80rem;
+    height: 5rem;
+    background-color: white;
+    /*box-shadow: rgba(2,11,20,0.2) 0px 5px 15px;*/
+    border: var(--border);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+    
+}
+header .header-1 .search-box input{
+    height:100%;
+    width:100%;
+    padding:0 1.2rem;
+    font-size: 1.6rem;
+    color: grey;
+    text-transform: none;
+}
+
+header .header-1 .search-box i{
+    padding-right: 1.5rem;
+    padding-top: 0rem;
+    font-size: 2.5rem;
+    color: grey;
+    cursor: pointer;
+}
+
+header .header-1 .search-box i:hover{
+    color: grey;
+}
+
+header .header-1 .icon i,header .header-1 .icon a{
+    font-size: 2.5rem;
+    margin-left: 1.5rem;
+    counter-reset: white;
+    cursor: pointer;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logobtn{
+    width: 40px;
+    height: 30px;
+    display: flex;
+    background: green;
+}
+.logobtn img{
+    width: 50px;
+    height: 30px;
+    display: flex;
+    background: black;
+}
+header .header-1 .icon i,header .header-1 .icon a{
+    font-size: 3rem;
+    margin-left: 2rem;
+    counter-reset: white;
+    cursor: pointer;
+}
+
+header .header-1 .icon i:hover,header .header-1 .icon a:hover{
+    color: grey ;
+}
+
+.icon .bx-search, .icon .bx-menu{
+    display: none;
+}
+header .header-1.active{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header .header-1{
+        padding: 2rem;
+    }
+}
+
+@media(max-width:768px){
+    html{
+        scroll-padding-top: 0;
+    }
+    body{
+        padding-bottom: 10rem;
+    }
+
+    .icon .bx-search ,.icon .bx-menu{
+        display: inline-block;
+        color: white;
+    }
+
+    header .header-1{
+        box-shadow: var(--box-shadow);
+        position: relative;
+    }
+    
+    header .search-box{
+        position: absolute;
+        top: -115%;
+        right: 6rem;
+        width: 90%;
+        box-shadow: var(--box-shadow);
+    }
+    header .header-1 .search-box.active{
+        top: 115%;
+    }
+}
+
+@media(max-width:550px){
+    html{
+        font-size: 50%;
+    }
+}
+.gear{
+    background-position: center;
+    background-size: cover;
+}
+
+.gear .gearitem{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.gear .gearitem .gear1{
+    flex:1 1 40rem;
+    text-align: center;
+    margin-top: 6rem;
+}
+
+.gear .gearitem .gear1 .gearimg{
+    height: 25rem;
+
+}
+
+.gear .gearitem .gear1 .gearimg:hover{
+    transform: scale(0.5);
+}
+
