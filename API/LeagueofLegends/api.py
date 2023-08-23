@@ -2,6 +2,8 @@ import pandas as pd
 import requests
 from urllib import parse
 
+
+
 col_list=[]
 username=''
 with open('APIcols.txt', 'r', encoding='utf-8') as file:
@@ -33,7 +35,7 @@ def preprocessing(df,r_timeline,col_list=col_list):
 
     #timeline지표들
     usernum=str(df1['participantId'].iloc[0])
-    oppnum=str((int(usernum)+5)%10)
+    oppnum=str((int(usernum)+4)%10+1)
     df1['GD@15']=r_timeline['info']['frames'][15]['participantFrames'][usernum]['totalGold']
 
     df1['CSD@15']=r_timeline['info']['frames'][15]['participantFrames'][usernum]['minionsKilled']
@@ -75,10 +77,6 @@ def getAPI(name):
     rankId = r
 
     df_final=pd.DataFrame()
-    with open('APIcols.txt', 'r', encoding='utf-8') as file:
-        for line in file:
-            col_list.append(line.strip()) 
-
     for i in rankId:
         url = 'https://asia.api.riotgames.com/lol/match/v5/matches/' + i + '?api_key=' + apiKey
         r = requests.get(url)
@@ -91,6 +89,4 @@ def getAPI(name):
         r_timeline=r_timeline.json()
         df_final=pd.concat([df_final,preprocessing(df,r_timeline)])
         df_final = df_final.reset_index(drop=True)
-        
-
-    df_final.to_csv('data.csv')
+    return df_final

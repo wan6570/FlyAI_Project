@@ -52,3 +52,4 @@ trueDamageTaken
 totalTimeSpentDead
 consumablesPurchased
 itemsPurchased
+win
