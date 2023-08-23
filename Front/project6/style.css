@@ -132,14 +132,17 @@ header .header-1 .icon i,header .header-1 .icon a{
     width: 40px;
     height: 30px;
     display: flex;
-    background: green;
+    background: none;
 }
+
 .logobtn img{
     width: 50px;
     height: 30px;
     display: flex;
-    background: black;
+    background: none;
+    align-items: center;
 }
+
 header .header-1 .icon i,header .header-1 .icon a{
     font-size: 3rem;
     margin-left: 2rem;
@@ -243,7 +246,7 @@ header .header-1.active{
 
 .player .graph{
     flex: 1 1 30rem;
-    background: yellow;
+    background: none;
 }
 .player .graph img{
     width: 100%;
@@ -284,7 +287,7 @@ header .header-1.active{
 }
 .gear .gear1 .gearitem{
     padding: 1rem;
-    background: red;
+    background: white;
     box-shadow: 0 0.5rem 1rem rgb(0,0,0,-1);
     border-radius: 0.5rem;
     text-align: center;
