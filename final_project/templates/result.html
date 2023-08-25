@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Results</title>
+</head>
+<body>
+    <h1>Comparison Results for {{ username }}</h1>
+
+    <h2>Your Profile</h2>
+    <img src="{{ icon_url }}" alt="User icon">
+    <p>Character: {{ char_user }}</p>
+    <p>Tier: {{ tier }} - Rank: {{ rank }}</p>
+
+    <h2>Similar Pro Player: {{ similar_player }}</h2>
+    <img src="data:image/jpeg;base64,{{ pro_image_data }}" alt="Pro player image">
+    <p>Character: {{ char_pro }}</p>
+    <p>{{ similar_feature_text }}</p>
+    <p>{{ strength_text }}</p>
+    <p>{{ weakness_text }}</p>
+
+    <h2>Gaming Gear Recommendation</h2>
+    <p>Mouse: {{ mouse }}</p>
+    <p>Keyboard: {{ keyboard }}</p>
+
+    <h2>Comparison Graph</h2>
+    <img src="data:image/png;base64,{{ url }}" alt="{{ player_name }} vs User Chart">
+
+    <!-- Optionally provide a link back to the main page -->
+    <a href="/">Go back to the main page</a>
+</body>
+</html>
