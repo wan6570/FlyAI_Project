@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-1{
+    background-color: #3617CE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5%;
+}
+
+.title_1{
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'Secular One', sans-serif;
+}
+
+.search-box{
+    width: 50rem;
+    height: 40px;
+    margin-right: 85px;  /* 수정 해야됨 */
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 30px 30px 30px 30px;
+    /* position: relative; 상대 위치 설정 */
+}
+
+.search-box > input{
+    height:100%;
+    width:100%;
+    text-transform: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dropdown{
+    width: 80px;
+    background-color: transparent; /* 배경색을 투명으로 설정 */
+    border: none; /* 테두리 제거 */
+    color: black; /* 글씨 색상을 하얀색으로 설정 */
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    vertical-align: middle;
+    text-transform: none;
+}
+
+#btn {
+    background-color: transparent;
+    color: #3617CE;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+.logobtn {
+    width: 80px;
+    height: 30px;
+    justify-content: flex-end;
+}
+
+.logobtn > img{
+    width: 100%;
+    height: 100%;
+    background: none;
+}
+
+.player {
+    padding: 10px 20%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-self: space-between;
+    background-color: pink;
+
+}
+
+.info {
+    flex: 1;
+    padding-right: 2rem; /* 우측 간격 조절 */
+    display: flex;
+    flex-direction: column; /* 위아래 정렬을 위해 컬럼으로 변경 */
+    align-items: flex-start;
+}
+
+.info .user {
+    padding-bottom: 1rem;
+}
+
+.user {
+    width: 430px;
+    display: flex;
+    align-items: center;
+    background-color: red;
+}
+
+.user > img {
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+}
+
+.user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.progamer {
+    width: 430px;
+    padding-top: 2rem; /* progamer와의 간격 조절 */
+    display: flex;
+    align-items: center;
+    background-color: blue;
+}
+
+.progamer > img {
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+}
+
+.pro_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.graph {
+    width: 400px;
+    height: 400px;
+    background-color: pink;
+}
+
+.graph > img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+    padding: 0 20%;
+    background-color: green;
+}
+
+.strength {
+    padding: 0 20%;
+}
+
+.weakness {
+    padding: 0 20%;
+}
+
+.gear {
+    display: flex;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gear #heading {
+    align-items: center;
+}
+
+.gear1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.keyboard{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center;
+}
+
+.mouse {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 세로 중앙 정렬 */
+    align-items: center;
+}
+
+.heading {
+    text-align: center;
+}
+
+.t {
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
