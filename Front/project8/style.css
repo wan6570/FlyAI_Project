@@ -53,7 +53,7 @@ header .header-1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3%;
+    padding: 1.5rem 2.5%;
 }
 
 header .header-1 .logo-title{
@@ -62,18 +62,12 @@ header .header-1 .logo-title{
     color: white;
 }
 
-header .header-1 .logo-title i{
-    color: white;
-    font-size: 40px;
-}
-
 header .header-1 .logo-title .title_1{
     color: white;
 }
 
 header .header-1 .search-box{
     width: 50rem;
-    max-width: 80rem;
     height: 5rem;
     background-color: white;
     /*box-shadow: rgba(2,11,20,0.2) 0px 5px 15px;*/
@@ -116,38 +110,32 @@ header .header-1 .search-box .dropdown{
 header .header-1 .search-box .dropdown:hover{
     color: grey;
 }
-
 header .header-1 .icon i,header .header-1 .icon a{
-    font-size: 2.5rem;
-    margin-left: 1.5rem;
+    font-size: 3rem;
+    margin-left: 2rem;
     counter-reset: white;
     cursor: pointer;
+    color: white;
 }
+
 .icon{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .logobtn{
-    width: 40px;
+    width: 50px;
     height: 30px;
     display: flex;
     background: none;
 }
 
 .logobtn img{
-    width: 50px;
+    width: 60px;
     height: 30px;
     display: flex;
     background: none;
     align-items: center;
-}
-
-header .header-1 .icon i,header .header-1 .icon a{
-    font-size: 3rem;
-    margin-left: 2rem;
-    counter-reset: white;
-    cursor: pointer;
 }
 
 header .header-1 .icon i:hover,header .header-1 .icon a:hover{
@@ -167,6 +155,7 @@ header .header-1.active{
 
 
 
+
 @media(max-width:991px){
     html{
         font-size: 55%;
@@ -179,12 +168,12 @@ header .header-1.active{
     }
 }
 
-@media(max-width:768px){
+@media(max-width:780px){
     html{
         scroll-padding-top: 0;
     }
     body{
-        padding-bottom: 10rem;
+        padding-bottom: 6rem;
     }
 
     .icon .bx-search ,.icon .bx-menu{
@@ -200,7 +189,7 @@ header .header-1.active{
     header .search-box{
         position: absolute;
         top: -115%;
-        right: 6rem;
+        right: 2rem;
         width: 90%;
         box-shadow: var(--box-shadow);
     }
@@ -209,12 +198,15 @@ header .header-1.active{
     }
 }
 
-@media(max-width:448px){
+@media(max-width:480px){
     html{
-        font-size: 50%;
+        font-size: 55%;
+    }
+    section{
+        padding: 5rem 4rem;
     }
 }
-
+/*
 .player{
     display: flex;
     flex-wrap: wrap;
@@ -312,56 +304,4 @@ header .header-1.active{
     font-size: 2rem;
     color: black;
     padding:1rem 0;
-}
-
-/*
-.gear .slider .gearitem{
-    width: 25rem ;
-    margin: 2rem 0;
-    position: relative;
-    overflow: hidden;
-    border: var(--border);
-    border: var(--border);
-    text-align: center;
-}
-
-.gear .slider .gear1:hover{
-    border: var(--border-hover);
-}
-
-
-.gear .slider .gearitem .gear1img{
-    padding:1rem;
-    background: linear-gradient(15deg, white 30% 30.1%);
-}
-
-.gear .slider .gearitem .gear1img img{
-    height: 25rem;
-}
-
-.gear .slider .content{
-    background: white;
-    padding: 1.5rem;
-}
-.gear .slider .content span{
-    font-size: 2rem;
-    color: black;
-}
-
-.swiper-button-next,.swiper-button-prev{
-    border: var(--border-hover);
-    height: 4rem;
-    width: 4rem;
-    color: black;
-    background: none;
-}
-
-.swiper-button-next::after,.swiper-button-prev::after{
-font-size: 2rem;
-}
-
-.swiper-button-next:hover,.swiper-button-prev:hover{
-    background: black;
-    color: white;
-}
-*/
+}*/
