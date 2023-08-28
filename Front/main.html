@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>title</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* 스크롤 막음 */
+      }
+
+      .main {
+        min-height: 100%; /* 최소 높이 설정 */
+        width: 100%;
+        background-color: #3617CE;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      /* Title을 고정된 위치에 배치 */
+      .title {
+        font-family: 'Secular One', sans-serif;
+        font-size: 160px;
+        text-align: center;
+        color: white;
+        margin-bottom: 20px; /* info-container와의 간격 조정 */
+      }
+
+      /* Info Container 스타일링 */
+      .info-container {
+        width: 60%;
+        display: flex;
+        height: 50px;
+        margin-top: -35px;
+        z-index: 0;
+        background-color: white; /* 초기 배경색을 하얀색으로 설정 */
+        align-items: center;
+        vertical-align: middle;
+        border-radius: 30px 30px 30px 30px;
+        position: relative; /* 상대 위치 설정 */
+      }
+
+      .input {
+        width: 500px;
+        z-index: 2;
+        height: 100%;
+        align-items: center; /* 수직 중앙 정렬 추가 */
+        justify-content: middle;
+      }
+
+      .Line {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        width: 70px;
+        background-color: transparent; /* 배경색을 투명으로 설정 */
+        border: none; /* 테두리 제거 */
+        color: black; /* 글씨 색상을 하얀색으로 설정 */
+        position: relative;
+        z-index: 2;
+        align-items: center;
+        vertical-align: middle;
+      }
+
+      .username {
+        border: none;
+        width: 200px;
+        margin-bottom: 0;
+        flex: 1;
+        align-items: center;
+        height: 30px;
+      }
+
+      .username::placeholder {
+        text-align: center;
+        font-size: 20px;
+      }
+
+      #btn {
+        background-color: transparent;
+        color: #3617CE;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        height: 50px;
+        z-index: 2;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 15px;
+      }
+
+      #loadingImage {
+        position: absolute;
+        display: none;
+        z-index: 3;
+        width: 100px;
+        left: 50%; /* 가운데 정렬을 위해 50%로 설정 */
+        top: 50%; /* 가운데 정렬을 위해 50%로 설정 */
+        transform: translate(-50%, -50%); /* 가운데 정렬 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <!-- Title을 고정된 위치에 배치 -->
+      <div class="title">Telescope</div>
+        <form action="/" method="post" class="info-container">
+          <select class="Line" id="lineSelect" name="Line">
+            <option value="TOP">TOP</option>
+            <option value="MID">MID</option>
+            <option value="ADC">ADC</option>
+            <option value="JUNGLE">JUNGLE</option>
+            <option value="SUPPORT">SUPPORT</option>
+          </select>
+          <input type="text" class="username" id="usernameInput" placeholder="search" name="username"/>
+          <!--<img alt="Loading..." id="loadingImage" src="{{ url_for('static', filename='loading.gif') }}" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);"/>-->
+          <img id="loadingImage" src="./images/loading.gif" />
+          <button class="material-symbols-outlined" id="btn">search</button>
+        </form>
+      </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var lineSelect = document.getElementById('lineSelect');
+        var usernameInput = document.getElementById('usernameInput');
+        var btn = document.getElementById('btn');
+        var loadingImage = document.getElementById('loadingImage');
+        var infoContainer = document.querySelector('.info-container');
+
+        btn.addEventListener('click', function() {
+          infoContainer.style.backgroundColor = 'transparent';
+          infoContainer.style.border = 'none';
+          lineSelect.style.display = 'none';
+          usernameInput.style.display = 'none';
+          btn.style.display = 'none';
+          loadingImage.style.display = 'block';
+
+          // 여기에 검색 로직을 추가하면 됩니다.
+
+          // 예를 들어, 5초 후에 loading 이미지를 숨기고 다시 버튼과 입력 요소를 보여줄 수 있습니다.
+          setTimeout(function() {
+            infoContainer.style.backgroundColor = 'white';
+            infoContainer.style.border = '';
+            loadingImage.style.display = 'none';
+            lineSelect.style.display = 'block';
+            usernameInput.style.display = 'block';
+            btn.style.display = 'block';
+          }, 5000); // 5초 (5000 밀리초)
+        });
+      });
+    </script>
+  </body>
+</html>
