@@ -1,0 +1,53 @@
+Player
+championName
+teamPosition
+champLevel
+kills
+deaths
+assists
+KDA 0.5
+totalMinionsKilled
+CSM
+goldEarned
+GPM
+GOLD ratio
+visionScore
+wardsPlaced
+wardsKilled
+visionWardsBoughtInGame
+detectorWardsPlaced
+VSPM
+WPM
+VWPM
+WCPM
+VS ratio
+totalDamageDealtToChampions
+physicalDamageDealtToChampions
+magicDamageDealtToChampions
+trueDamageDealtToChampions
+DPM
+DMG ratio
+K+A Per Minute
+KP
+doubleKills
+tripleKills
+quadraKills
+pentaKills
+GD@15
+CSD@15
+XPD
+LVLD@15
+objectivesStolen
+damageDealtToTurrets
+damageDealtToBuildings
+totalHeal
+totalHealsOnTeammates
+damageSelfMitigated
+totalDamageShieldedOnTeammates
+timeCCingOthers
+totalTimeCCDealt
+trueDamageTaken
+totalTimeSpentDead
+consumablesPurchased
+itemsPurchased
+win
